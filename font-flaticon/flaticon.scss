@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?1fde6dcf8069477367821f10cd0923b3") format("truetype"),
+url("./flaticon.woff?1fde6dcf8069477367821f10cd0923b3") format("woff"),
+url("./flaticon.woff2?1fde6dcf8069477367821f10cd0923b3") format("woff2"),
+url("./flaticon.eot?1fde6dcf8069477367821f10cd0923b3#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1fde6dcf8069477367821f10cd0923b3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "network": "\f101",
+    "save-money": "\f102",
+    "dashboard": "\f103",
+    "money-bag": "\f104",
+    "handshake": "\f105",
+    "bars": "\f106",
+    "accounting": "\f107",
+    "finance": "\f108",
+    "presentation": "\f109",
+    "advisor": "\f10a",
+);
+
+.flaticon-network:before {
+    content: map-get($flaticon-map, "network");
+}
+.flaticon-save-money:before {
+    content: map-get($flaticon-map, "save-money");
+}
+.flaticon-dashboard:before {
+    content: map-get($flaticon-map, "dashboard");
+}
+.flaticon-money-bag:before {
+    content: map-get($flaticon-map, "money-bag");
+}
+.flaticon-handshake:before {
+    content: map-get($flaticon-map, "handshake");
+}
+.flaticon-bars:before {
+    content: map-get($flaticon-map, "bars");
+}
+.flaticon-accounting:before {
+    content: map-get($flaticon-map, "accounting");
+}
+.flaticon-finance:before {
+    content: map-get($flaticon-map, "finance");
+}
+.flaticon-presentation:before {
+    content: map-get($flaticon-map, "presentation");
+}
+.flaticon-advisor:before {
+    content: map-get($flaticon-map, "advisor");
+}
